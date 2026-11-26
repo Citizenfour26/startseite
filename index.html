@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startseite</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      min-height: 100%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: #0d0f12;
+      background-image: url("https://i.postimg.cc/WbzfhvpB/startseite-2.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 20px 48px;
+      gap: 32px;
+    }
+
+    .yt-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .yt-link {
+      display: inline-block;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .yt-link:hover,
+    .yt-link:focus-visible {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.75);
+      outline: 2px solid rgba(255, 255, 255, 0.75);
+      outline-offset: 3px;
+    }
+
+    .yt-link img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .tiles-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1640px;
+      width: 100%;
+    }
+
+    .tile {
+      display: block;
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: rgba(15, 17, 21, 0.85);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tile:hover,
+    .tile:focus-visible {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.75);
+      outline: 2px solid rgba(255, 255, 255, 0.8);
+      outline-offset: 2px;
+    }
+
+    .tile img {
+      display: block;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header class="yt-header">
+    <a
+      class="yt-link"
+      href="https://www.youtube.com/@Citizenfour-ai"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="YouTube Kanal @Citizenfour-ai"
+    >
+      <img
+        src="https://i.postimg.cc/nhRFqZq6/yt.png"
+        alt="YouTube Kanal"
+      />
+    </a>
+  </header>
+
+  <main class="tiles-grid" aria-label="Kacheln">
+    <!-- 1 -->
+    <a class="tile" href="https://citizenfour26.github.io/mix" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/P5ts6cdF/1.png" alt="Kachel 1" width="300" height="200" />
+    </a>
+
+    <!-- 10 -->
+    <a class="tile" href="https://citizenfour26.github.io/pitch" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/kgfrLc4R/10.png" alt="Kachel 10" width="300" height="200" />
+    </a>
+
+    <!-- 2 -->
+    <a class="tile" href="https://citizenfour26.github.io/auto" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/dVqPWXqF/2.png" alt="Kachel 2" width="300" height="200" />
+    </a>
+
+    <!-- 3 -->
+    <a class="tile" href="https://citizenfour26.github.io/studio-4k" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/Jz1VTg1V/3.png" alt="Kachel 3" width="300" height="200" />
+    </a>
+
+    <!-- 4 -->
+    <a class="tile" href="https://citizenfour26.github.io/mp3vinyl" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/htSWCwsJ/4.png" alt="Kachel 4" width="300" height="200" />
+    </a>
+
+    <!-- 5 -->
+    <a class="tile" href="https://citizenfour26.github.io/vscratch" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/MpdkgDTS/5.png" alt="Kachel 5" width="300" height="200" />
+    </a>
+
+    <!-- 6 -->
+    <a class="tile" href="https://citizenfour26.github.io/vstudio" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/bw3X4TJY/6.png" alt="Kachel 6" width="300" height="200" />
+    </a>
+
+    <!-- 7 -->
+    <a class="tile" href="https://citizenfour26.github.io/numark" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/0ycghfQ8/7.png" alt="Kachel 7" width="300" height="200" />
+    </a>
+
+    <!-- 8 -->
+    <a class="tile" href="https://citizenfour26.github.io/mpc" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/t42085Ts/8.png" alt="Kachel 8" width="300" height="200" />
+    </a>
+
+    <!-- 9 -->
+    <a class="tile" href="https://citizenfour26.github.io/tech" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/P52G04x8/9.png" alt="Kachel 9" width="300" height="200" />
+    </a>
+  </main>
+</body>
+</html>
